@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Outfit', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: hsl(216, 50%, 16%);
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  width: 500px;
+}
+.card-image {
+  position: relative;
+}
+#image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  display: block;
+}
+.overlay {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.25s ease-in-out all;
+  border-radius: 20px;
+  background: hsl(178, 100%, 50%);
+}
+
+.overlay:hover {
+  opacity: 1;
+  background: hsl(178, 100%, 50%);
+}
+.header h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.header p {
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+}
+.data {
+  font-size: 21px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.data p:nth-of-type(1){
+  color: hsl(178, 100%, 50%);
+}
+.data p:nth-of-type(2){
+  color: hsl(215, 51%, 70%);
+}
+.avatar-section {
+  padding-top: 20px;
+  border-top: 1px solid hsl(215, 51%, 70% , 30%);
+  display: flex;
+  align-items: center;
+}
+.avatar-section p {
+  padding-left: 20px;
+  font-size: 18px;
+}
+.avatar-section span {
+  color: hsl(215, 51%, 70%);
+}
+#avatar {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+a{
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
